@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="school_manage_maven:war exploded">
+    <output-path>$PROJECT_DIR$/target/school_manage</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="school_manage_maven" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="c3p0-0.9.1.2" />
+          <element id="library" level="project" name="jfinal-ext-3.1.4" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/school_manage/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="school_manage_maven/web/Web" />
+    </root>
+  </artifact>
+</component>

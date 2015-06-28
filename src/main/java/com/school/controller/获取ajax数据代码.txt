@@ -1,0 +1,24 @@
+$(function() {
+		$("#search_input123").bind("keyup",function() {
+							var data = $("#academy_name").val();
+							$.post(
+											"getAcademy",
+											{
+												"q" : data
+											},
+											function(repData) {
+												var html = "";
+												$.each(repData,function(n,value) {
+																	html += "<a href='#' style='background-color:gray' onclick='get_item()' id='a_'"
+																			+ n
+																			+ "'>"
+																			+ repData[n].academy_id
+																			+ repData[n].academy_name
+																			+ "<a><br>";
+																	$("#list")
+																			.html(
+																					html);
+																});
+											});
+						});
+	});
